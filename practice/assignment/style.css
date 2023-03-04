@@ -1,0 +1,55 @@
+
+  .modal-body >div{
+    width: 50%;
+    height: 100%;
+}  
+ .show-modal{
+    display: flex;
+    gap: 2px;} 
+    
+.modal-div{
+    background-color: brown;
+    
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+}
+
+    
+@media only screen and (max-width:668px) {
+    .modal-body>div{
+        width: 100%;
+        height: 100%;
+    } 
+    .modal1{
+        width: 100%;
+        border: none;
+    }
+    #description{
+        width: 100%;
+    }
+    .img{
+        position: relative;
+        height: 70%;
+        margin-top: 10px;
+    }
+    #right-side{
+        position: relative;
+    }
+    
+    #score{
+        position: absolute;
+        width: 200px;
+        height: 42px;
+        right: 0;
+        top: 0;
+        
+
+    }
+} 
+    

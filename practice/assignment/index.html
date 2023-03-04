@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1 class="d-flex justify-content-between align-items-center"></h1>
+    <header class="container text-center">
+        <h2 class="mt-2">AI Universe Hub</h2>
+        <button onclick="sortData()" type="button" class="btn btn-danger my-4">Sort By Date</button>
+    </header>
+    <main class="container">
+        <section>
+        
+        <div id="spinner"  class="    d-flex     justify-content-center align-items-center  ">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4" id="main-container"></div>
+                
+                
+              
+               <div id="see-more"   class="text-center d-none">
+                <button onclick="moreDetails()" type="button" class="btn btn-danger my-4">see more</button>
+               </div> 
+              
+              
+        </section>
+        <section class="container ">
+            <!-- Vertically centered modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-md-flex  gap-3 ">
+                    <div class=" border  rounded-2 modal1 ">
+                        <p id="description" class="py-2"></p>
+                        <div class="d-flex   flex-wrap my-2">
+                          <div id="modal-1" ></div>
+                        </div>
+                          <div class="d-flex w-auto">
+                            
+                            <div>
+                              <h4 class="my-2" >features</h4>
+                              <div id="list-items"></div>
+                            </div>
+                            <div>
+                              <h4 >integration</h4>
+                              <div id="integration-items"></div>
+                            </div>
+                          </div>
+
+                    </div>
+
+
+
+
+
+                    
+
+                    <div >
+                      <div id="right-side" >
+                        
+                      </div>
+                      <div id="info" class="my-3">
+
+                      </div >
+                      <div id=" lost-data"  class="text-center text-danger d-none"><p>no data avaliable</p></div>
+                    </div>
+                      
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+  
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
